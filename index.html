@@ -416,7 +416,7 @@ font-size: 14px; }
 					            </div>
 					            
 					
-					            <p class="summary">Collaborated with a small team to transition a prototyped application into a reliable production-ready system. Implemented significant architectural enhancements improving scalability, fault tolerance, logging, and traceability while reducing complexity. Assumed wide array of responsibilities, including software development tasks, feature planning, defect triage and resolution, and infrastructure management.</p>
+					            <p class="summary">Collaborated with a small team to transition a prototyped application into a reliable production-ready system. Implemented significant architectural enhancements improving scalability, fault tolerance, logging, and traceability while reducing complexity. Assumed wide array of responsibilities, including software development tasks, feature planning, defect triage and resolution, devOps and infrastructure management.</p>
 					
 					            <ul>
 					                <li>Assessed the existing system recommending quality, performance, testing, and security improvements.</li>
@@ -428,6 +428,8 @@ font-size: 14px; }
 					                <li>Migrated existing AWS assets from manual management to Terraform based management.</li>
 					                <li>Improved existing 3rd party API integrations and implemented several new 3rd party integrations.</li>
 					                <li>Improved untraceable, non-scaleable, error-prone background processor to a fault-tolerant, scaleable, and traceable queue based system.</li>
+					                <li>Engineered and implemented a generic, reusable search functionality to replace existing search and pagination code, streamlining the codebase by eliminating hundreds of lines of untested boilerplate. This system featured dynamic frontend rendering of searchable and sortable fields with customizable operators, coupled with a companion UI component for user-friendly query construction. The server-side processing supported pagination, sorting, and CSV export, providing a robust and customizable user experience.</li>
+					                <li>Identified security gaps during the modification of password complexity requirements and observed that the existing authentication service did not align with best practices. Implemented essential security enhancements by incorporating robust hashing and salting techniques, along with implementing measures to prevent the inadvertent leakage of user information.</li>
 					            </ul>
 					        </section>
 					        <section class="item">
@@ -445,12 +447,12 @@ font-size: 14px; }
 					            </div>
 					            
 					
-					            <p class="summary">Quickly learned Terraform and HCL and lead a development effort to provide fully provisioned kubernetes based environments on demand removing the need for all manual configuration.</p>
+					            <p class="summary">Quickly learned Terraform and HCL and led a development effort to build a proof of concept for a PaaS (Platform as a Service) product that provided fully provisioned kubernetes based environments including logging, secrets management, authentication, and queueing.</p>
 					
 					            <ul>
-					                <li>Built and tested Terraform modules for building and managing development and production environments.</li>
 					                <li>Stabilized existing Terraform modules and integrated with Scalr to make provisioning of production ready environments on demand with no manual intervention, reducing creation time from weeks to hours.</li>
 					                <li>Assisted Software Developers with daily operations tasks such as Helm chart maintenance and creation, Azure DevOps Pipelines, Kubernetes troubleshooting, Docker, etc.</li>
+					                <li>Built and tested Terraform modules for building and managing development and production environments.</li>
 					            </ul>
 					        </section>
 					        <section class="item">
@@ -468,11 +470,11 @@ font-size: 14px; }
 					            </div>
 					            
 					
-					            <p class="summary">As a Senior Engineer I mentored other engineers providing technical and architectural guidance for the entire development organization.  Led many client facing projects requiring integration with multiple 3rd party APIs.</p>
+					            <p class="summary">Worked with and mentored other engineers to build and support various applications in the unemployment insurances space, providing technical and architectural guidance for the entire development organization.  Collaborated extensively with the DevOps team to increase CI/CD and hosting performance.</p>
 					
 					            <ul>
 					                <li>Architected and implemented an asynchronous event driven integration with an external legacy SOAP service and exposed the integration as a simple json API.  Using durable queues and Blob storage for retrieval and storage of results.</li>
-					                <li>Integrated 3rd party Anti Fraud API to prevent unauthorized access to systems in an attempt to reduce and prevent fraud.</li>
+					                <li>Integrated 3rd party Anti Fraud API to prevent unauthorized access to systems to reduce and prevent fraud.</li>
 					                <li>Built a suite of Helm templates for managing Kubernetes deployments that reduced boilerplate and simplified new application development.</li>
 					                <li>Rewrote internal library for durable queueing based on documented best practices, to decrease latency and increase throughput while reducing load on the messaging server. This was completed without any breaking changes to the API.</li>
 					                <li>Built a unified middleware that integrated with client libraries and application APIs to validate the included JWT and provide context to all REST calls and durable messages.</li>
@@ -485,7 +487,7 @@ font-size: 14px; }
 					                        Software Engineer 3
 					                </h3>
 					                <h4 class="company-name" style="padding-top: 1px;">
-					                    Things For Reasons LLC
+					                    Contract for Idaho Department of Labor
 					                </h4>
 					                <h5 class="italic pull-right" style="padding-top: 2px;margin-left:auto; ">
 					                        <span class="startDate">02/2018</span>
@@ -494,15 +496,14 @@ font-size: 14px; }
 					            </div>
 					            
 					
-					            <p class="summary">Worked as contractor on iUS (internet Unemployment System) for the Idaho Department of Labor.</p>
+					            <p class="summary">Collaborated on building and maintaining unemployment insurance software, rapidly adapting to a new tech stack.  Mentored other developers with varying backgrounds and experience levels and advocated for testing at and above expected scale.  Designed and implemented significant architectural changes that improved the systems fault-tolerance.  Improved existing design patterns for streamlined client-specific implementations.</p>
 					
 					            <ul>
-					                <li>Worked effectively with a team of developers to build and maintain unemployment insurance software.</li>
-					                <li>Rapidly learned new tech stack and quickly became a top contributor.</li>
 					                <li>Developed Web Apps and services in C# with .NET Core, wrote unit tests, and performed peer reviews to ensure quality.</li>
 					                <li>Developed new design patterns that ensured code maintainability and simplified client specific implementations.</li>
 					                <li>Built fault tolerant distributed processing pipeline for scheduled jobs that mitigated daily failures and reduced memory requirements by more than 75%.</li>
 					                <li>Designed and implemented a code pattern that enabled custom code for clients on forks of the main code base.  Pattern allowed conflict free merges from main to the forks and allowed for any part of the core implementation to be modified without affecting other client implementations.</li>
+					                <li>Led a migration of more than 100 microservices to Kubernetes, implementing versatile Helm charts, CI/CD pipelines, logging, metrics, application configuration, and secure secret management.</li>
 					            </ul>
 					        </section>
 					        <section class="item">
@@ -514,48 +515,27 @@ font-size: 14px; }
 					                    Clearwater Analytics
 					                </h4>
 					                <h5 class="italic pull-right" style="padding-top: 2px;margin-left:auto; ">
-					                        <span class="startDate">06/2014</span>
+					                        <span class="startDate">05/2013</span>
 					                        <span class="endDate"> - 02/2018</span>
 					                </h5>
 					            </div>
 					            
 					
+					            <p class="summary">Held diverse roles as Software Development Intern, Software Developer, Intern Team Lead, mentor, and Test Engineer, advocating for Test Driven Development and code reviews to instill proficiency in Java and a quality-oriented mindset with team members.  Played a crucial role in designing and implementing a scalable solution, replacing a legacy data ingestion application to enhance code quality and reliability.</p>
 					
 					            <ul>
+					                <li>As Intern Team Lead provided technical direction, mentoring, and training for 7 software development interns. Helped each intern become a valuable contributor and provided feedback on code reviews and ideas on how to improve design and quality. Maintained a quality-oriented workflow through an emphasis on testing and code reviews.</li>
 					                <li>Built a framework that tested previously untestable parts of the application and increased unit test coverage by 6%.</li>
 					                <li>Instrumented applications to gain detailed understanding of performance problems.</li>
-					                <li>Worked with team to improve both the code quality and reliability of the application.</li>
 					                <li>Participated in code reviews and helped other developers gain a higher proficiency in Java and a mindset for quality.</li>
 					                <li>Led design committee reworking the core of the application to reduce duplicate processing and increase performance.</li>
 					                <li>Re-architected and rewrote many critical aspects of the system to increase performance and add functionality.</li>
 					                <li>Designed and built a system to collect and store errors for later verification by analysts.</li>
-					                <li>With team modified our workflow which reduced production hotfixes from a weekly occurrence to only 2 in a year.</li>
-					                <li>Became a crucial team member by gaining a solid understanding of 750,000+ lines of code.</li>
+					                <li>Reduced production hotfixes from a weekly occurrence to only 2 in a year by wroking with the team to adapte new quality and testing standards.</li>
 					                <li>Assisted in designing and implementing a regression testing tool to control and manage the distributed system.</li>
 					                <li>Worked with SRE, DevOps and management to get new applications from inception to production.</li>
-					                <li>Helped analysts write SQL queries to troubleshoot and resolve production data issues.</li>
-					                <li>As Intern Team Lead provided technical direction, mentoring, and training for 7 software development interns. Helped each intern become a valuable contributor and provided feedback on code reviews and ideas on how to improve design and quality. Maintained a quality-oriented workflow through an emphasis on testing and code reviews.</li>
-					            </ul>
-					        </section>
-					        <section class="item">
-					            <div class="section-header clearfix" style="display: flex;">
-					                <h3 class="bold pull-left" style="margin-right:5px">
-					                        Software Development Intern
-					                </h3>
-					                <h4 class="company-name" style="padding-top: 1px;">
-					                    Clearwater Analytics
-					                </h4>
-					                <h5 class="italic pull-right" style="padding-top: 2px;margin-left:auto; ">
-					                        <span class="startDate">05/2013</span>
-					                        <span class="endDate"> - 08/2013</span>
-					                </h5>
-					            </div>
-					            
-					
-					
-					            <ul>
-					                <li>Rewrote core scheduling and threading architecture to provide needed functionality.</li>
-					                <li>Developed 2 new web-apps using Java, Jersey and REST to replace legacy software.</li>
+					                <li>Assisted analysts in writing SQL queries to troubleshoot and resolve production data issues.</li>
+					                <li>As an intern rewrote core scheduling and threading architecture to provide needed functionalityand developed varous new web-apps using Java, Jersey and REST to replace legacy software.</li>
 					            </ul>
 					        </section>
 					</div>
