@@ -12,535 +12,1106 @@
 /*----- Dimensions and sizes -----*/
 /* Base */
 @font-face {
-font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 300;
-src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04zwV_pQ1T3xN3K1c3sB361us.ttf) format('truetype');
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04zwV_pQ1T3xN3K1c3sB361us.ttf) format('truetype');
 }
+
 @font-face {
-font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 700;
-src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z306qf9KHRHwsVx7iw5MXmY.ttf) format('truetype');
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z306qf9KHRHwsVx7iw5MXmY.ttf) format('truetype');
 }
+
 @font-face {
-font-family: 'Lato';
-font-style: normal;
-font-weight: 300;
-src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format('truetype');
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format('truetype');
 }
+
 @font-face {
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
 }
+
 @font-face {
-font-family: 'Lato';
-font-style: normal;
-font-weight: 700;
-src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/DvlFBScY1r-FMtZSYIYoYw.ttf) format('truetype');
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/DvlFBScY1r-FMtZSYIYoYw.ttf) format('truetype');
 }
+
 @font-face {
-font-family: 'Lato';
-font-style: italic;
-font-weight: 300;
-src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
 }
+
 @font-face {
-font-family: 'Lato';
-font-style: italic;
-font-weight: 400;
-src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/LqowQDslGv4DmUBAfWa2Vw.ttf) format('truetype');
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/LqowQDslGv4DmUBAfWa2Vw.ttf) format('truetype');
 }
+
 @font-face {
-font-family: 'Lato';
-font-style: italic;
-font-weight: 700;
-src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
 }
 
 body {
-font-family: "Lato", Helvetica, Arial, sans-serif;
-font-weight: 400;
-background: #f8f8f8;
-/* margin: 50px 0 100px; */
-letter-spacing: .3px;
-color: #39424B; }
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: #f8f8f8;
+  /* margin: 50px 0 100px; */
+  letter-spacing: .3px;
+  color: #39424B;
+  margin: auto;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
 
-h1, h2, h3, h4, h5, h6 {
-text-transform: uppercase;
-margin: 0; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  margin: 0;
+  text-wrap: none;
+  white-space: nowrap;
+}
 
 h1 {
-font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-font-weight: 700;
-font-size: 40px;
-letter-spacing: 1px; }
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 
 h2 {
-font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-font-weight: 300;
-font-size: 16px;
-letter-spacing: .5px; }
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 550;
+  font-size:20px;
+
+  letter-spacing: .5px;
+}
 
 h3 {
-font-family: "Lato", Helvetica, Arial, sans-serif;
-font-weight: 300;
-font-size: 14px;
-letter-spacing: .4px; }
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .4px;
+}
+
 h3.bold {
-font-weight: 700; }
+  font-weight: 700;
+}
 
 h4 {
-font-family: "Lato", Helvetica, Arial, sans-serif;
-font-weight: 300;
-font-size: 12px; }
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
 h4.bold {
-font-weight: 700; }
+  font-weight: 700;
+}
 
 h5 {
-font-family: "Lato", Helvetica, Arial, sans-serif;
-font-weight: 300;
-font-size: 11px; }
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
 h5.italic {
-font-style: italic; }
+  font-style: italic;
+}
 
 h6 {
-font-family: "Lato", Helvetica, Arial, sans-serif;
-font-weight: 400;
-font-size: 10px; }
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
 
 a {
-color: inherit;
-text-decoration: inherit; }
+  color: inherit;
+  text-decoration: inherit;
+}
+
 a:hover {
-color: #2895F1; }
+  color: #2895F1;
+}
+
 a .fa-external-link {
-font-size: 10px;
-vertical-align: text-top; }
+  font-size: 10px;
+  vertical-align: text-top;
+}
 
 p,
 li {
-font-size: 11px; }
+  font-size: 12px;
+}
 
 blockquote {
-font-size: 11px;
-font-family: "Lato", Helvetica, Arial, sans-serif;
-font-weight: 400;
-font-style: italic;
-margin: 10px 25px; }
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px;
+}
 
 em {
-color: #999; }
+  color: #999;
+}
 
+/*  */
 ul {
-margin: 10px 0 0;
--webkit-padding-start: 25px; }
-ul li {
-padding-left: 10px; }
-ul.minimal {
-list-style: none;
-padding: 0; }
-ul.minimal li {
-  margin-bottom: 3px;
-  padding-left: 0; }
-ul.two-column {
--webkit-column-count: 2;
--webkit-column-gap: 28px;
--moz-column-count: 2;
-     column-count: 2;
--moz-column-gap: 28px;
-     column-gap: 28px; }
-ul.two-column li {
-  padding-left: 0; }
+  margin: 0;
+  /* inset: 2px; d */
+  list-style-type: circle;
+  list-style-position: initial;
+  padding-left: 20px;
+}
 
 @page {
-size: A4; }
+  size: A4;
+}
 
 .container {
-padding-top: 20px; }
+  padding-top: 0px;
+}
 
 .keyline {
-width: 45px;
-margin: 8px 0 10px;
-border-top: 1px solid #56817A; }
+  width: 60px;
+  margin: 0px 0 0px;
+  border-top: 1px solid #56817A;
+}
 
 .pull-left {
-float: left; }
+  float: left;
+}
 
 .pull-right {
-float: right; }
+  float: right;
+}
 
-.clearfix:after {
-content: "";
-display: table;
-clear: both; }
+/*.clearfix:after {*/
+/*content: "";*/
+/*display: table;*/
+/*clear: both; }*/
 
 .profile-pic {
-margin-top: -5px;
-margin-right: 18px; }
+  margin-top: -5px;
+  margin-right: 18px;
+}
+
 .profile-pic img {
-height: 52px;
-width: 52px;
-border-radius: 50%;
-border: 2px solid #56817A; }
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid #56817A;
+}
 
 .summary {
-margin: 5px 0 5px; }
+  margin: 2px 0 2px;
+}
 
 /* Layouts */
 .page {
-background: white;
-/* width: auto; */
-min-height: 792px;
-display: block;
-/* margin: 0 auto; */
-border-top: 10px solid #56817A;
-padding: 18px 22px 30px 34px;
-/* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);  */
+  flex: 1;
+  margin: auto;
+
+  max-width: 790px;
+  background: white;
+  /* width: auto; */
+  min-height: 792px;
+  display: block;
+  /* margin: 0 auto; */
+  border-top: 8px solid #56817A;
+  padding: 5px 40px 30px 40px;
+
+  /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);  */
+  @media (max-width:600px) {
+    padding: 15px;
+  }
 }
+
 .page:after {
-content: "";
-display: table;
-clear: both; }
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .left-column {
-/* float: left;  */
-display: table-cell;
-width: 160px;
-margin-right: 10px;
-word-wrap: break-word;
-margin-bottom: 500px;
+  /* float: left;  */
+  display: table-cell;
+  width: 160px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  margin-bottom: 500px;
 }
 
 .right-column {
-display: table-cell;
-
-width: auto;
-overflow: hidden; 
+  display: table-cell;
+  width: auto;
+  /* overflow: hidden; */
 }
 
 .item {
-margin-bottom: 15px; }
-.item:last-child {
-margin-bottom: 0; }
-
-/* @media print {
-body {    margin: 0; }
-.page {
-width: 100%;
-height: 100%;
-margin: 0;
-padding: 18px 0 30px;
-box-shadow: none; 
+  margin-bottom: 15px;
 }
-.page .resume-header,
-.page .resume-content {
-  padding: 0 22px 0 34px;
- }
-.container {
-page-break-inside: avoid; }
-.work-container .item {
-page-break-inside: avoid; }
-.fa-external-link {
-display: none; } 
-} */
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+  /* .page .resume-header, */
+  .resume-content {
+    padding-top: 0px;
+  } 
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 8px 0 30px;
+    box-shadow: none;
+  }
+
+
+
+  .work-entry-wrapper {
+    page-break-inside: avoid;
+    /* margin-top: 105px;
+    margin-bottom: 105px; */
+  }
+
+  .work-container .item {
+    page-break-inside: avoid;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}
 
 /* Components */
 .info-tag-container {
-margin-bottom: 5px; }
+  margin-bottom: 5px;
+}
+
 .info-tag-container .fa {
-font-size: 14px;
-width: 12px;
-margin-right: 5px;
-text-align: center;
-vertical-align: middle; }
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .info-tag-container .fa.fa-map-marker {
-  font-size: 16px; }
+  font-size: 16px;
+}
+
 .info-tag-container .fa.fa-mobile {
-  font-size: 18px; }
+  font-size: 18px;
+}
+
 .info-tag-container .fa.fa-envelope-o {
-  font-size: 12px; }
+  font-size: 12px;
+}
+
 .info-tag-container .fa.fa-desktop {
-  font-size: 11px; }
+  font-size: 11px;
+}
+
 .info-tag-container .fa.fa-external-link {
   width: auto;
   font-size: inherit;
-  vertical-align: text-top; }
+  vertical-align: text-top;
+}
+
 .info-tag-container .info-text {
-font-size: 9px;
-display: inline-block;
-vertical-align: middle;
-width: 139px; }
+  font-size: 9px;
+  display: inline-block;
+
+  /*vertical-align: middle;*/
+  /*width: 139px;*/
+}
 
 .references-container .fa {
-font-size: 14px; }
+  font-size: 14px;
+}
+
+.display-flex {
+  display: flex;
+  /*height: auto;*/
+  /*flex-direction: row;*/
+  align-items: baseline;
+  width: fit-content;
+  height: min-content;
+  @media (max-width:600px) {
+    flex-direction: column;
+    align-items: unset;
+  }
+}
 
 
+
+.flex-item-fixed {
+  flex: 0;
+  width: auto;
+}
+
+.flex-item {
+  flex: 1;
+}
+
+.flex-item-2 {
+  flex: 2;
+
+}
+
+.better-info-text {
+  font-size: 12px;
+  padding-left: 5px;
+
+  @media (max-width:600px) {
+    padding-left: 0px;
+
+  }
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.firstCaps {
+  text-transform: unset;
+}
+
+.lh72 {
+  /* line-height: 40px; */
+  /* height: 40px; */
+}
+
+.work-tech-wrapper {
+  display: grid;
+  grid-template-columns: 90px 90px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: min-content;
+  height: min-content;
+  margin-top: 15px;
+  margin-left: 10px;
+  /* border: solid; */
+  font-weight: 800;
+  display: none;
+
+}
+
+.work-tech-title {
+  /* border-width: 1px; */
+  display: none;
+}
+
+.work-tech-entry {
+  /* list-style: none; */
+  flex: 1;
+  font-size: 10px;
+  white-space: nowrap;
+  max-height: 12px;
+  padding-bottom: 1px;
+  max-width: fit-content;
+  display: none;
+}
+
+.work-entry-body-wrapper {
+  /* display: grid;
+  grid-template-columns:  1fr ; */
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.header-underline {
+  /* width: 45px; */
+  padding-bottom: 3px;
+  border-top: 1px solid #56817A;
+}
+
+.skill-body-wrapper{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.skills-wrapper {
+  display: grid;
+  grid-template-rows: fit-content fit-content;
+  flex-wrap: wrap;
+  justify-content: left;
+  @media(max-width: 700px) {
+    display: flex
+  }
+}
+
+.skills-keyword-wrapper {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  flex-direction: column;
+  @media(max-width: 700px) {
+    display: flex
+  }
+}
+.skills-entry {
+  min-width: fit-content;
+  max-width: max-content;
+  margin-left: 5px;
+  font-size: 10px;
+  flex: 1;
+  /* text-wrap: none; */
+  white-space: nowrap;
+  height: min-content;
+}
+.skill-name{
+  
+  display: flex;
+  /* text-align: left; */
+  /* border-bottom: 5px #56817A; */
+  /* align-items: center; */
+  
+}
+.underline{
+  max-width: fit-content;
+  border-bottom: 1px solid #56817A;
+  /* text-align: center; */
+  /* margin: auto; */
+}
+.title {
+  /* padding-top:5px */
+}
+
+.date-wrapper {
+  flex: 2;
+  /* padding-left: 10px; */
+  justify-self: right;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: repeat(2, auto);
+  align-items: baseline;
+  width: 600px;
+  padding-top: 0px;
+  @media (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+  }
+}
+
+.section-header-company-name {
+  flex: 4;
+  /* padding-left: 12px; */
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+.section-header-location { 
+  flex:1
+
+}
+.section-header-location2 { 
+  flex:2
+}
+.section-header-name {
+  flex: 1;
+  padding-right: 5px;
+}
+
+.section-header-wrapper {
+  max-width: 600px;
+}
+
+.skills-education-wrapper {
+  display: grid;
+  /* padding-bottom: 10px; */
+  grid-template-columns: 180px 5fr;
+
+  @media (max-width:700px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.skills-eductaion-entry {
+  padding-right: 10px;
+  flex: 1;
+}
+
+.work-wrapper {
+  padding-top: 0px;
+}
+
+.summary-container {
+  padding-bottom: 0px;
+}
+
+.work-summary {
+  display: none;
+}
 	</style>
 	</head>
 	<body>
 		<main id="resume" class="page">
-			<header class="resume-header clearfix">
-			    <div class="profile-header pull-left">
-			        <h1>Greg Dasney</h1>
-			        <h2>Software Engineer</h2>
+			<header >
+			    <div class="display-flex">
+			        <h1 class="flex-item">Greg Dasney</h1>
+			        <h2 class="flex-item lh72">Software Engineer</h2>
+			
+			    </div>
+			    <div class="display-flex">
+			            <h2 class="better-info-text flex-item-2">435.695.3094</h2>
+			            <h2 class="better-info-text flex-item-2 lower">greg@dasney.net</h2>
+			                <h2 class="better-info-text flex-item-2 firstCaps">Meridian Idaho</h2>
 			    </div>
 			</header>
+			
 			<div class="resume-content">
-				<aside class="left-column">
-					<div class="container about-container">
-					    <div class="title">
-					        <h3>About</h3>
-					        <div class="keyline"></div>
-					    </div>
-					        <div class="info-tag-container">
-					            <i class="fa fa-map-marker"></i>
-					        
-					                <h6 class="info-text">Meridian Idaho</h6>
-					        </div>
-					        <div class="info-tag-container">
-					            <i class="fa fa-envelope-o"></i>
-					        
-					                <h6 class="info-text">greg@dasney.net</h6>
-					        </div>
-					        <div class="info-tag-container">
-					            <i class="fa fa-mobile"></i>
-					        
-					                <h6 class="info-text">(435) 695-3094</h6>
-					        </div>
-					
-					</section>
-					<div class="container education-container">
-					    <div class="title">
-					        <h3>Education</h3>
-					        <div class="keyline"></div>
-					    </div>
-					        <section class="item">
-					            <div class="bold clearfix">
-					                <h5 class=" pull-left">
-					                        Utah State University
-					                </h5>
-					            </div>
-					            <h6 class="bold">BS Computer Science</h6>
-					            <h6 class="italic pull-left">
-					                    <span class="startDate">2010</span>
-					                    <span class="endDate"> - 2014</span>
-					            </h6>
-					        </section>
-					</div>
-					    <div class="skills-container">
-					            <section class="container">
-					                    <div class="title">
-					                        <h3>Languages</h3>
-					                        <div class="keyline"></div>
-					                    </div>                    <ul class="minimal">
-					                            <li><h6>TypeScript</h6></li>
-					                            <li><h6>JavaScript</h6></li>
-					                            <li><h6>C#</h6></li>
-					                            <li><h6>Java</h6></li>
-					                            <li><h6>Python</h6></li>
-					                    </ul>
-					            </section>
-					            <section class="container">
-					                    <div class="title">
-					                        <h3>Technologies</h3>
-					                        <div class="keyline"></div>
-					                    </div>                    <ul class="minimal">
-					                            <li><h6>React</h6></li>
-					                            <li><h6>Node.js</h6></li>
-					                            <li><h6>HTML/CSS</h6></li>
-					                            <li><h6>SQL (Postgres, MSSQL)</h6></li>
-					                            <li><h6>TypeORM</h6></li>
-					                            <li><h6>Hibernate</h6></li>
-					                            <li><h6>Entity Framework Core</h6></li>
-					                            <li><h6>MVC</h6></li>
-					                            <li><h6>.NET Core</h6></li>
-					                            <li><h6>Docker</h6></li>
-					                    </ul>
-					            </section>
-					            <section class="container">
-					                    <div class="title">
-					                        <h3>DevOps Technologies</h3>
-					                        <div class="keyline"></div>
-					                    </div>                    <ul class="minimal">
-					                            <li><h6>Kubernetes</h6></li>
-					                            <li><h6>Helm</h6></li>
-					                            <li><h6>AWS</h6></li>
-					                            <li><h6>Azure</h6></li>
-					                            <li><h6>Terraform/HCL</h6></li>
-					                            <li><h6>ECS/AKS</h6></li>
-					                            <li><h6>RabbitMQ/BullMQ</h6></li>
-					                    </ul>
-					            </section>
-					            <section class="container">
-					                    <div class="title">
-					                        <h3>Other/Interests</h3>
-					                        <div class="keyline"></div>
-					                    </div>                    <ul class="minimal">
-					                            <li><h6>3d Printing</h6></li>
-					                            <li><h6>Useless Robotics</h6></li>
-					                            <li><h6>Mountain Unicycling</h6></li>
-					                            <li><h6>Electric Skateboarding</h6></li>
-					                    </ul>
-					            </section>
-					    </div>
-				</aside>
-				<div class="right-column">
+			
+
 					        <div class="container summary-container">
 					            <div class="title">
 					                <h3>Summary</h3>
 					                <div class="keyline"></div>
+					                
 					            </div>            <p class="summary">
-					                I&#x27;m a seasoned Software Engineer with a decade of development experience working on backend APIs, frontend development, data modeling, testing, and infrastructure management. I&#x27;ve excelled in various roles, including software developer, team lead, devops engineer, and test engineer. I have skill and experience building maintainable software, streamlining complex processes, integrating 3rd party APIs, enhancing legacy systems, and delivering production-ready solutions across the product lifecycle.
+					                I&#x27;m a Full Stack Software Engineer with over a decade experience in multiple industries at companies ranging from seed stage startups to large established corporations and independent consulting. I&#x27;ve collaborated with domain specialists to gather requirements to build and design APIs, user interfaces, data models, and hosting infrastructure while documenting and communicating the functionality and use of the solutions. I&#x27;ve excelled in various roles, including software developer, team lead, DevOps engineer, and test engineer. I have skill and experience building maintainable software, integrating 3rd party APIs, enhancing legacy systems, and delivering production-ready applications.
 					            </p>
 					        </div>
-					<div class="container work-container">
+					<div class="skills-education-wrapper">
+						<div class="skills-education-entry">
+							
+							<div class="education-wrapper" >
+							    <div class="title">
+							        <h3>Education</h3>
+							        <div class="keyline"></div>
+							        
+							    </div>    <h3 class="bold  education-institution" >
+							            Utah State University
+							    </h3>
+							
+							    <div class="display-flex">
+							        <h4 class="education-study-type flex-item" >
+							            B.S.
+							        </h4>
+							        <h4 class="education-areaflex-item flex-item" >
+							            Computer Science
+							        </h4>
+							    </div>    
+							    <h4 class="education-dates" >
+							        <span class="startDate">2010</span>
+							        <span class="endDate"> - 2014</span>
+							    </h4>
+							
+							</div>
+						</div>
+						<div class="skills-education-entry" >
+							
+							    <div class="skill-body-wrapper">
+							
+							    
+							        <div class="skills-wrapper">
+							            <div class="skill-name">
+							                <h3 class="underline">Languages</h3>
+							                </div>
+							            <div class="skills-keyword-wrapper">
+							                <div class="skills-entry">C#</div>
+							                <div class="skills-entry">TypeScript</div>
+							                <div class="skills-entry">SQL</div>
+							                <div class="skills-entry">HTML/CSS</div>
+							                <div class="skills-entry">JavaScript</div>
+							                <div class="skills-entry">Java</div>
+							                <div class="skills-entry">Python</div>
+							            </div>
+							        </div>
+							        <div class="skills-wrapper">
+							            <div class="skill-name">
+							                <h3 class="underline">Technologies</h3>
+							                </div>
+							            <div class="skills-keyword-wrapper">
+							                <div class="skills-entry">React</div>
+							                <div class="skills-entry">Node.js</div>
+							                <div class="skills-entry">TypeORM</div>
+							                <div class="skills-entry">.NET Core</div>
+							                <div class="skills-entry">Entity Framework</div>
+							                <div class="skills-entry">RabbitMQ</div>
+							                <div class="skills-entry">Hibernate</div>
+							            </div>
+							        </div>
+							        <div class="skills-wrapper">
+							            <div class="skill-name">
+							                <h3 class="underline">DevOps</h3>
+							                </div>
+							            <div class="skills-keyword-wrapper">
+							                <div class="skills-entry">Docker</div>
+							                <div class="skills-entry">Kubernetes</div>
+							                <div class="skills-entry">Helm</div>
+							                <div class="skills-entry">AWS</div>
+							                <div class="skills-entry">Azure</div>
+							                <div class="skills-entry">Terraform/HCL</div>
+							                <div class="skills-entry">ECS/AKS</div>
+							            </div>
+							        </div>
+							        <div class="skills-wrapper">
+							            <div class="skill-name">
+							                <h3 class="underline">Other Skills</h3>
+							                </div>
+							            <div class="skills-keyword-wrapper">
+							                <div class="skills-entry">API Design</div>
+							                <div class="skills-entry">Data Modeling</div>
+							                <div class="skills-entry">Distributed Systems</div>
+							                <div class="skills-entry">Systems Design</div>
+							                <div class="skills-entry">Mentoring</div>
+							                <div class="skills-entry">Agile Methodologies</div>
+							                <div class="skills-entry">DevOps/GitOps</div>
+							            </div>
+							        </div>
+							 </div>
+							
+						</div>		
+					</div>
+                    
+					<div class="work-wrapper">
 					    <div class="title">
 					        <h3>Experience</h3>
-					        <div class="keyline"></div>
-					    </div>
-					        <section class="item">
-					            <div class="section-header clearfix" style="display: flex;">
-					                <h3 class="bold pull-left" style="margin-right:5px">
+					        
+					    </div>    <div class="header-underline"></div>
+					        <section class="work-entry-wrapper">
+					            <div class="section-header section-header-wrapper">
+					            <div class="section-header" >
+					                <h3 class="bold  section-header-name">
 					                        Senior Software Engineer
 					                </h3>
-					                <h4 class="company-name" style="padding-top: 1px;">
-					                    Zitti inc.
-					                </h4>
-					                <h5 class="italic pull-right" style="padding-top: 2px;margin-left:auto; ">
-					                        <span class="startDate">07/2022</span>
-					                        <span class="endDate"> - 11/2023</span>
-					                </h5>
+					                <h4 class="section-header-company-name" >Zitti inc, (Remote)    </h4>
+					                
 					            </div>
-					            
-					
-					            <p class="summary">Collaborated with a small team to transition a prototyped application into a reliable production-ready system. Implemented significant architectural enhancements improving scalability, fault tolerance, logging, and traceability while reducing complexity. Assumed wide array of responsibilities, including software development tasks, feature planning, defect triage and resolution, devOps and infrastructure management.</p>
-					
-					            <ul>
-					                <li>Assessed the existing system recommending quality, performance, testing, and security improvements.</li>
-					                <li>Implemented new application features (Database, API, and Frontend) using React, TypeScript, Node.js, and Postgres.</li>
-					                <li>Wrote unit tests to verify existing functionality prior to implemeting modifications, preventing regressions and defects while ensuring stability.</li>
-					                <li>Enhanced logging and telemetry infrastructure including publishing and collection of metrics, along with the migration to structured logging.</li>
-					                <li>Used Terraform and AWS to build new CI/CD pipelines to automate a manual merge and deploy process.</li>
-					                <li>Implemented security improvements around various system critical components.</li>
-					                <li>Migrated existing AWS assets from manual management to Terraform based management.</li>
-					                <li>Improved existing 3rd party API integrations and implemented several new 3rd party integrations.</li>
-					                <li>Improved untraceable, non-scaleable, error-prone background processor to a fault-tolerant, scaleable, and traceable queue based system.</li>
-					                <li>Engineered and implemented a generic, reusable search functionality to replace existing search and pagination code, streamlining the codebase by eliminating hundreds of lines of untested boilerplate. This system featured dynamic frontend rendering of searchable and sortable fields with customizable operators, coupled with a companion UI component for user-friendly query construction. The server-side processing supported pagination, sorting, and CSV export, providing a robust and customizable user experience.</li>
-					                <li>Identified security gaps during the modification of password complexity requirements and observed that the existing authentication service did not align with best practices. Implemented essential security enhancements by incorporating robust hashing and salting techniques, along with implementing measures to prevent the inadvertent leakage of user information.</li>
-					            </ul>
+					            <h4 class="italic date-wrapper" >
+					                        <span class="startDate">(07/2022</span>
+					                        <span class="endDate"> - 11/2023)</span>
+					                </h5>
+					            </div>            <div class="keyline"></div>
+					            <div class="work-entry-body-wrapper">
+					                <div class="work-summary-wrapper">
+					                    <p class="work-summary">Collaborated with a small team to transition a prototyped application into a reliable production-ready system. Implemented significant architectural and security enhancements improving scalability, fault tolerance, logging, and traceability while reducing complexity. Performed wide array of responsibilities, including software development tasks, feature planning, defect triage and resolution, devOps and infrastructure management.</p>
+					                    <ul>
+					                        <li>Worked with a small team of engineers at a seed stage startup to transition a prototyped application into a reliable production-ready system.</li>
+					                        <li>Implemented new application features (Database, API, and Frontend) using React, TypeScript, Node.js, and Postgres.</li>
+					                        <li>Performed wide array of responsibilities, including software development tasks, feature planning, defect triage and resolution, and DevOps via Terraform.</li>
+					                        <li>Rewrote CI/CD pipelines reducing run time by over 50% and improving deployment speed and automating the deploy approval process.</li>
+					                        <li>Optimized hosting performance and stability by migrating AWS assets from manual management to Terraform.</li>
+					                        <li>Improved reliability and fault tolerance of 3 existing 3rd party API integrations and implemented several new 3rd party integrations.</li>
+					                        <li>Upgraded an untraceable, non-scaleable, error-prone background processor to a scaleable, fault-tolerant, and traceable queue based system.</li>
+					                        <li>Eliminated hundreds of lines of boilerplate with a generic search and pagination component.</li>
+					                        <li>Enhanced platform security by implementing OWASP best practices in the authentication system.</li>
+					                    </ul>
+					                </div>
+					                 <div class ='work-tech-wrapper'>
+					                     <h3 class="work-tech-title" >Tech</h3>
+					                 
+					                         <div class="work-tech-entry">
+					                             TypeScript
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             BullMQ
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             TypeORM
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             NestJs
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             React
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             AWS
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             ECS
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             CodeBuild
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             HTML
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Node.js
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             CSS
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             HCL
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Terraform
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Docker
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Postgres
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             SQL
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             git
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Linux
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Windows
+					                         </div>
+					                 </div>            </div>
 					        </section>
-					        <section class="item">
-					            <div class="section-header clearfix" style="display: flex;">
-					                <h3 class="bold pull-left" style="margin-right:5px">
+					        <section class="work-entry-wrapper">
+					            <div class="section-header section-header-wrapper">
+					            <div class="section-header" >
+					                <h3 class="bold  section-header-name">
 					                        Senior DevOps Engineer
 					                </h3>
-					                <h4 class="company-name" style="padding-top: 1px;">
-					                    Solid State Operations
-					                </h4>
-					                <h5 class="italic pull-right" style="padding-top: 2px;margin-left:auto; ">
-					                        <span class="startDate">01/2022</span>
-					                        <span class="endDate"> - 06/2022</span>
-					                </h5>
+					                <h4 class="section-header-company-name" >Solid State Operations, (Boise, Idaho (Hybrid))    </h4>
+					                
 					            </div>
-					            
-					
-					            <p class="summary">Quickly learned Terraform and HCL and led a development effort to build a proof of concept for a PaaS (Platform as a Service) product that provided fully provisioned kubernetes based environments including logging, secrets management, authentication, and queueing.</p>
-					
-					            <ul>
-					                <li>Stabilized existing Terraform modules and integrated with Scalr to make provisioning of production ready environments on demand with no manual intervention, reducing creation time from weeks to hours.</li>
-					                <li>Assisted Software Developers with daily operations tasks such as Helm chart maintenance and creation, Azure DevOps Pipelines, Kubernetes troubleshooting, Docker, etc.</li>
-					                <li>Built and tested Terraform modules for building and managing development and production environments.</li>
-					            </ul>
+					            <h4 class="italic date-wrapper" >
+					                        <span class="startDate">(01/2022</span>
+					                        <span class="endDate"> - 06/2022)</span>
+					                </h5>
+					            </div>            <div class="keyline"></div>
+					            <div class="work-entry-body-wrapper">
+					                <div class="work-summary-wrapper">
+					                    <p class="work-summary">Led a team of engineers in designing and building a proof of concept PaaS (Platform as a Service) product that provided fully provisioned kubernetes hosting environments that included, logging, secrets management, authentication, and queuing.</p>
+					                    <ul>
+					                        <li>Led a team of 3 engineers in designing and building a fully automated system for provisioning development and production clusters.</li>
+					                        <li>Reduced creation time of hosting environments from 2 weeks to 2 hours and facilitated on demand environments using Terraform and GitOps best practices.</li>
+					                        <li>Built and tested Terraform modules for provisioning and managing hosting environments.</li>
+					                        <li>Fostered ownership of infrastructure among developers while helping them learn how to manage their resources via GitOps.</li>
+					                    </ul>
+					                </div>
+					                 <div class ='work-tech-wrapper'>
+					                     <h3 class="work-tech-title" >Tech</h3>
+					                 
+					                         <div class="work-tech-entry">
+					                             Entity Framework
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Azure
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             EKS
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             HCL
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Terraform
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Docker
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Helm
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             MSSQL
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             SQL
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             MVC
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Razor
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Azure Devops
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Azure Pipelines
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             git
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Kubernetes
+					                         </div>
+					                 </div>            </div>
 					        </section>
-					        <section class="item">
-					            <div class="section-header clearfix" style="display: flex;">
-					                <h3 class="bold pull-left" style="margin-right:5px">
+					        <section class="work-entry-wrapper">
+					            <div class="section-header section-header-wrapper">
+					            <div class="section-header" >
+					                <h3 class="bold  section-header-name">
 					                        Senior Software Engineer
 					                </h3>
-					                <h4 class="company-name" style="padding-top: 1px;">
-					                    Solid State Operations
-					                </h4>
-					                <h5 class="italic pull-right" style="padding-top: 2px;margin-left:auto; ">
-					                        <span class="startDate">01/2021</span>
-					                        <span class="endDate"> - 01/2022</span>
-					                </h5>
+					                <h4 class="section-header-company-name" >Solid State Operations, (Boise, Idaho (Hybrid))    </h4>
+					                
 					            </div>
-					            
-					
-					            <p class="summary">Worked with and mentored other engineers to build and support various applications in the unemployment insurances space, providing technical and architectural guidance for the entire development organization.  Collaborated extensively with the DevOps team to increase CI/CD and hosting performance.</p>
-					
-					            <ul>
-					                <li>Architected and implemented an asynchronous event driven integration with an external legacy SOAP service and exposed the integration as a simple json API.  Using durable queues and Blob storage for retrieval and storage of results.</li>
-					                <li>Integrated 3rd party Anti Fraud API to prevent unauthorized access to systems to reduce and prevent fraud.</li>
-					                <li>Built a suite of Helm templates for managing Kubernetes deployments that reduced boilerplate and simplified new application development.</li>
-					                <li>Rewrote internal library for durable queueing based on documented best practices, to decrease latency and increase throughput while reducing load on the messaging server. This was completed without any breaking changes to the API.</li>
-					                <li>Built a unified middleware that integrated with client libraries and application APIs to validate the included JWT and provide context to all REST calls and durable messages.</li>
-					                <li>Designed and implemented an alternative login scheme for use with a customer&#x27;s legacy authentication system, allowing their users to authenticate with new systems without having to create an additional account.</li>
-					            </ul>
+					            <h4 class="italic date-wrapper" >
+					                        <span class="startDate">(01/2021</span>
+					                        <span class="endDate"> - 01/2022)</span>
+					                </h5>
+					            </div>            <div class="keyline"></div>
+					            <div class="work-entry-body-wrapper">
+					                <div class="work-summary-wrapper">
+					                    <p class="work-summary">Worked with and mentored other engineers to build and support applications unemployment insurances agencies. Provided technical and architectural guidance for the entire development organization. Created and communicated project timelines and provided technical documentation on three new applications built and delivered to client specifications.</p>
+					                    <ul>
+					                        <li>Worked with and mentored other engineers to build and support applications for state unemployment insurance agencies.</li>
+					                        <li>Designed and built a REST API around an external legacy SOAP service allowing for simple integration with downstream services.</li>
+					                        <li>Integrated 3rd party Anti Fraud API to prevent unauthorized access to systems to reduce and prevent fraud.</li>
+					                        <li>Developed a suite of reusable Helm templates that reduced boilerplate and simplified new application deployment.</li>
+					                        <li>Rewrote queuing library to decrease latency and increase throughput while reducing load on the messaging server.</li>
+					                        <li>Simplified JWT implementation with unified middleware to share context between REST API calls and durable messages.</li>
+					                        <li>Created an alternative login scheme for use with a customer&#x27;s legacy authentication system, allowing their users to authenticate with new systems.</li>
+					                    </ul>
+					                </div>
+					                 <div class ='work-tech-wrapper'>
+					                     <h3 class="work-tech-title" >Tech</h3>
+					                 
+					                         <div class="work-tech-entry">
+					                             Azure Service Bus
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             C#
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             .Net Core
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             .Net Framework
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Azure
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             EKS
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Docker
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Helm
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             MSSQL
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             SQL
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             MVC
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             RAZOR
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Azure
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Azure Devops
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Azure Pipelines
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             CI/CD
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             git
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Kubernetes
+					                         </div>
+					                 </div>            </div>
 					        </section>
-					        <section class="item">
-					            <div class="section-header clearfix" style="display: flex;">
-					                <h3 class="bold pull-left" style="margin-right:5px">
+					        <section class="work-entry-wrapper">
+					            <div class="section-header section-header-wrapper">
+					            <div class="section-header" >
+					                <h3 class="bold  section-header-name">
 					                        Software Engineer 3
 					                </h3>
-					                <h4 class="company-name" style="padding-top: 1px;">
-					                    Contract for Idaho Department of Labor
-					                </h4>
-					                <h5 class="italic pull-right" style="padding-top: 2px;margin-left:auto; ">
-					                        <span class="startDate">02/2018</span>
-					                        <span class="endDate"> - 12/2020</span>
-					                </h5>
+					                <h4 class="section-header-company-name" >Idaho Department of Labor(Contract), (Boise, Idaho (Hybrid))    </h4>
+					                
 					            </div>
-					            
-					
-					            <p class="summary">Collaborated on building and maintaining unemployment insurance software, rapidly adapting to a new tech stack.  Mentored other developers with varying backgrounds and experience levels and advocated for testing at and above expected scale.  Designed and implemented significant architectural changes that improved the systems fault-tolerance.  Improved existing design patterns for streamlined client-specific implementations.</p>
-					
-					            <ul>
-					                <li>Developed Web Apps and services in C# with .NET Core, wrote unit tests, and performed peer reviews to ensure quality.</li>
-					                <li>Developed new design patterns that ensured code maintainability and simplified client specific implementations.</li>
-					                <li>Built fault tolerant distributed processing pipeline for scheduled jobs that mitigated daily failures and reduced memory requirements by more than 75%.</li>
-					                <li>Designed and implemented a code pattern that enabled custom code for clients on forks of the main code base.  Pattern allowed conflict free merges from main to the forks and allowed for any part of the core implementation to be modified without affecting other client implementations.</li>
-					                <li>Led a migration of more than 100 microservices to Kubernetes, implementing versatile Helm charts, CI/CD pipelines, logging, metrics, application configuration, and secure secret management.</li>
-					            </ul>
+					            <h4 class="italic date-wrapper" >
+					                        <span class="startDate">(02/2018</span>
+					                        <span class="endDate"> - 12/2020)</span>
+					                </h5>
+					            </div>            <div class="keyline"></div>
+					            <div class="work-entry-body-wrapper">
+					                <div class="work-summary-wrapper">
+					                    <p class="work-summary">Collaborated on building and maintaining unemployment insurance software, rapidly adapting to a new tech stack.  Mentored other developers with varying backgrounds and experience levels while advocating for quality and testing above expected scale. Designed and implemented significant architectural changes that improved system performance and fault-tolerance.</p>
+					                    <ul>
+					                        <li>Mentored other developers with varying backgrounds and experience levels, advocating for best practices and testing above expected scale.</li>
+					                        <li>Developed Web Apps and services in C# with .NET Core, wrote unit tests, and performed peer reviews to ensure quality.</li>
+					                        <li>Built fault tolerant distributed processing pipeline for scheduled jobs that mitigated daily failures and reduced memory requirements by more than 75%.</li>
+					                        <li>Led a migration of 112 microservices from Azure App Plans to Kubernetes.</li>
+					                        <li>Implemented reusable helm charts that eliminated hundreds of lines of boilerplate in 40+ repositories.</li>
+					                        <li>Added metric collection that found memory leaks in half of the existing services.</li>
+					                        <li>Designed, documented, and taught a design pattern that allowed conflict free merges between a core implementation and client-specific forks.</li>
+					                    </ul>
+					                </div>
+					                 <div class ='work-tech-wrapper'>
+					                     <h3 class="work-tech-title" >Tech</h3>
+					                 
+					                         <div class="work-tech-entry">
+					                             C#
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             .Net Core
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             EKS
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Docker
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Helm
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             MSSQL
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             SQL
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             MVC
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Razor
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Azure
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Azure Devops
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Azure Pipelines
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             CI/CD
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             RabbitMQ
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             git
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             API Design
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Database Design
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Data Modeling
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Microservices
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Kubernetes
+					                         </div>
+					                 </div>            </div>
 					        </section>
-					        <section class="item">
-					            <div class="section-header clearfix" style="display: flex;">
-					                <h3 class="bold pull-left" style="margin-right:5px">
+					        <section class="work-entry-wrapper">
+					            <div class="section-header section-header-wrapper">
+					            <div class="section-header" >
+					                <h3 class="bold  section-header-name">
 					                        Software Engineer
 					                </h3>
-					                <h4 class="company-name" style="padding-top: 1px;">
-					                    Clearwater Analytics
-					                </h4>
-					                <h5 class="italic pull-right" style="padding-top: 2px;margin-left:auto; ">
-					                        <span class="startDate">05/2013</span>
-					                        <span class="endDate"> - 02/2018</span>
-					                </h5>
+					                <h4 class="section-header-company-name" >Clearwater Analytics, (Boise, Idaho)    </h4>
+					                
 					            </div>
-					            
-					
-					            <p class="summary">Held diverse roles as Software Development Intern, Software Developer, Intern Team Lead, mentor, and Test Engineer, advocating for Test Driven Development and code reviews to instill proficiency in Java and a quality-oriented mindset with team members.  Played a crucial role in designing and implementing a scalable solution, replacing a legacy data ingestion application to enhance code quality and reliability.</p>
-					
-					            <ul>
-					                <li>As Intern Team Lead provided technical direction, mentoring, and training for 7 software development interns. Helped each intern become a valuable contributor and provided feedback on code reviews and ideas on how to improve design and quality. Maintained a quality-oriented workflow through an emphasis on testing and code reviews.</li>
-					                <li>Built a framework that tested previously untestable parts of the application and increased unit test coverage by 6%.</li>
-					                <li>Instrumented applications to gain detailed understanding of performance problems.</li>
-					                <li>Participated in code reviews and helped other developers gain a higher proficiency in Java and a mindset for quality.</li>
-					                <li>Led design committee reworking the core of the application to reduce duplicate processing and increase performance.</li>
-					                <li>Re-architected and rewrote many critical aspects of the system to increase performance and add functionality.</li>
-					                <li>Designed and built a system to collect and store errors for later verification by analysts.</li>
-					                <li>Reduced production hotfixes from a weekly occurrence to only 2 in a year by wroking with the team to adapte new quality and testing standards.</li>
-					                <li>Assisted in designing and implementing a regression testing tool to control and manage the distributed system.</li>
-					                <li>Worked with SRE, DevOps and management to get new applications from inception to production.</li>
-					                <li>Assisted analysts in writing SQL queries to troubleshoot and resolve production data issues.</li>
-					                <li>As an intern rewrote core scheduling and threading architecture to provide needed functionalityand developed varous new web-apps using Java, Jersey and REST to replace legacy software.</li>
-					            </ul>
+					            <h4 class="italic date-wrapper" >
+					                        <span class="startDate">(05/2013</span>
+					                        <span class="endDate"> - 02/2018)</span>
+					                </h5>
+					            </div>            <div class="keyline"></div>
+					            <div class="work-entry-body-wrapper">
+					                <div class="work-summary-wrapper">
+					                    <p class="work-summary">Worked as Software Development Intern, Software Developer, Intern Team Lead, mentor, and Test Engineer, advocating for Test Driven Development and code reviews to instill proficiency in Java and a quality-oriented mindset with team members.  Played a crucial role in designing and implementing a scalable solution, replacing a legacy data ingestion application to enhance code quality and reliability.</p>
+					                    <ul>
+					                        <li>Led a team of 7 software development interns providing technical direction, mentoring, and training.</li>
+					                        <li>Worked in diverse roles including, Intern Team Lead, Mentor, and Test Engineer Software Developer, and Software Development Intern.</li>
+					                        <li>Played a crucial role in designing and implementing a scalable solution, replacing a legacy data ingestion application.</li>
+					                        <li>Increased unit test coverage 6% by automating testing of previously untestable parts of the application.</li>
+					                        <li>Participated in code reviews helping peers gain a higher proficiency in Java and a mindset for quality.</li>
+					                        <li>Created a system to collect and store errors for later verification by analysts.</li>
+					                        <li>Eliminated weekly hotfixes by colaborating with team to develop and adapt and standardize development and testing processes.</li>
+					                        <li>Designed and implemented a regression testing tool to control and manage a microservice based distributed system.</li>
+					                        <li>Collaborated with SRE, DevOps and management to get new applications from inception to production.</li>
+					                        <li>Assisted analysts in writing SQL queries to troubleshoot and resolve production data issues.</li>
+					                        <li>Built a GraphQL-like API that enabled SQL queries using downstream REST APIs as datasources/tables.</li>
+					                    </ul>
+					                </div>
+					                 <div class ='work-tech-wrapper'>
+					                     <h3 class="work-tech-title" >Tech</h3>
+					                 
+					                         <div class="work-tech-entry">
+					                             Java
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             _HornetQ
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             MSSQL
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             SQL
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             _Subversion
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             git
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             _tomcat
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             _Jenkins
+					                         </div>
+					                         <div class="work-tech-entry">
+					                             Microservices
+					                         </div>
+					                 </div>            </div>
 					        </section>
 					</div>
-					
-				</div>
+
 			</div>
 		</main>
 	</body>
